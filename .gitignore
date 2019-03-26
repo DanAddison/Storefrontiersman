@@ -99,10 +99,17 @@ Thumbs.db
 
 # track these mu-plugins and plugins
 !wp-content/mu-plugins/example-mu-plugin/
-!wp-content/plugins/example-plugin/
+!wp-content/plugins/advanced-custom-fields-pro/
+!wp-content/plugins/woocommerce/
 
 # track the relevant starter-theme or child-theme....
 !wp-content/themes/storefrontiersman/
+!wp-content/themes/storefront/
+
+# track my gulp set up but not the node modules folder
+!wp-content/themes/gulp-dev/
+node_modules/
+
 # ....but ignore these specific files from my theme
 wp-content/themes/storefrontiersman/style.css
 wp-content/themes/storefrontiersman/assets/sass/maps
