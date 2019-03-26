@@ -1,0 +1,109 @@
+.site-header {
+  position: relative;
+  padding: 0;
+  background-size: cover;
+  background-position: center bottom;
+  height: 150px;
+
+  @media screen and (min-width: 500px) {
+    height: 200px;
+  }
+
+  @media screen and (min-width: 700px) {
+    height: 250px;
+  }
+
+  @media screen and (min-width: 900px) {
+    height: 300px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    height: 350px;
+  }
+
+  @media screen and (min-width: 1500px) {
+    height: 450px;
+  }
+}
+
+.site-branding {
+
+  .site-title a,
+  .site-description {
+
+    color: white;
+  }
+}
+
+// restrict width of header cart below 1000px so that nav items still work:
+.site-header-cart {
+  top: -75px;
+  margin-left: auto;
+  width: 100px;
+
+  &:hover,
+  &:focus {
+    background-color: #F2F2F2
+  } 
+
+  @media screen and (min-width: 1000px) {
+    width: 300px;
+  }
+}
+
+.site-header-cart:hover .widget_shopping_cart {
+  left: -200px;
+  width: 300px;
+
+  @media screen and (min-width: 1000px) {
+    left: 0;
+  }
+}
+
+// remove price total from cart contents and align count next to icon:
+.site-header-cart .cart-contents {
+  display: flex;
+  justify-content: flex-end;
+
+  .amount {
+    display:none;
+  }
+
+  .count {
+    display: none;
+
+    @media screen and (min-width: $bp_menu) {
+      display: block; 
+      padding-right: 5px;
+      line-height: 1.2;
+      color: $color__action;
+    }
+  }
+
+  &:after {
+    color: $color__body;
+  }
+}
+
+// header mini cart dropdown styling:
+.site-header-cart .widget_shopping_cart a.button,
+.widget a.button.checkout {
+  background-color: $color__button-background;
+
+  &:hover,
+  &:focus {
+    background-color: $color__action;
+  }
+}
+
+.widget_shopping_cart_content {
+  padding: 0 1em;
+}
+
+.widget_shopping_cart .product_list_widget li {
+  padding-left: 0;
+
+  .quantity {
+    padding-left: 1.5em;
+  }
+}

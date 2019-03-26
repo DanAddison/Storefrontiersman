@@ -1,0 +1,79 @@
+.hero {
+	position: relative;
+	
+	.hero__image {
+		height: 200px;
+		width: auto;
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-position:center;
+		background-attachment: fixed;
+		position: relative;
+		z-index: 1;
+		
+		@media screen and (min-width: $bp-m) {
+			height: 300px;		
+		}
+		
+		@media screen and (min-width: $bp-l) {
+			height: 400px;		
+		}
+
+		@media screen and (min-width: $bp-xl) {
+			height: 500px;		
+		}
+	}
+	
+	.entry-header {
+		z-index: 2;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		background-color: rgba(255, 255, 255, 0.5);
+		
+		h1 {
+			margin: 1em 0;
+			text-transform: uppercase;
+			color: $color__body;
+			// font-weight: 300;
+			font-size: 1.5em;
+			letter-spacing: 0.1em;
+			
+			@media screen and (min-width: $bp-l) {
+				font-size: 2em;
+			}
+
+			@media screen and (min-width: $bp-xl) {
+				font-size: 2.5em;
+			}
+		}
+		
+	}
+	
+}
+// .hero__text {
+// 	padding: $spacing/2 0;
+// 	background-color: #fff;
+	
+// 	p {
+// 		margin-bottom: .75em;
+// 		color: $headings;
+// 	}
+	
+// 	@media screen and (min-width: $bp-m) {
+		
+// 		p {
+// 			font-size: 1.125em
+// 		}			
+// 	}
+	
+// 	@media screen and (min-width: $bp-l) {
+		
+// 		p {
+// 			font-size: 1.5em;
+// 			max-width: 60%;
+// 		}
+// 	}
+// }

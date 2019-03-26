@@ -1,0 +1,120 @@
+.splash {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.splash__image {
+	background-size: cover;
+	background-position: center center;
+  display: block;
+  background-image: url('assets/images/tat1.jpg');
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: relative;
+  z-index: 10;
+  height: 100vh;
+}
+
+.splash__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 12;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  
+  .site-identity {
+    text-align: center;
+    margin-bottom: 5em;
+    // padding: 2em 5em 1em;
+    
+    h1 {
+      color: white;
+      font-size: 2.5em;
+      font-weight: 300;
+      margin: 0;
+
+      @media screen and (min-width: $bp-s) {
+        font-size: 3.5em;
+      }
+
+      @media screen and (min-width: $bp-m) {
+        font-size: 5em;
+      }
+
+      @media screen and (min-width: $bp-l) {
+        font-size: 6em;
+      }
+    }
+    
+    p {
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 0.5em;
+      font-size: .8em;
+
+      @media screen and (min-width: $bp-s) {
+        font-size: 1em;
+      }
+
+      @media screen and (min-width: $bp-m) {
+        font-size: 1.5em;
+      }
+
+      @media screen and (min-width: $bp-l) {
+        font-size: 1.75em;
+      }
+    }
+  }
+
+  .links {
+    width: 90%;
+    max-width: $bp-m;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (min-width: $bp-s) {
+      flex-direction: row;
+    }
+
+    div {
+      margin: 1.5em 0;
+      flex-grow: 1;
+      color: white;
+      font-size: 1em;
+      font-weight: 300;
+      text-align: center;
+      
+      @media screen and (min-width: $bp-l) {
+        font-size: 1.25em;
+      }
+      
+      a {
+        color: white;
+        text-transform: uppercase;
+        padding: .5em 2em;
+        border: 1px solid white;
+        transition: background-color 0.2s ease;
+
+        &:hover {
+          background-color: $color__action;
+        }
+      }
+    }
+  }
+
+}

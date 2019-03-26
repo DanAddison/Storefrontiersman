@@ -1,0 +1,74 @@
+// main menu my account icon
+.fa-user {
+  color: $color__body;
+}
+
+.main-navigation ul.menu ul li a, .main-navigation ul.nav-menu ul li a {
+  font-weight: 300;
+
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+
+.main-navigation ul li a:hover, .main-navigation ul li:hover > a, .site-title a:hover, a.cart-contents:hover, .site-header-cart .widget_shopping_cart a:hover, .site-header-cart:hover > li > a, .site-header ul.menu li.current-menu-item > a {
+  color: $color__action;
+}
+
+.main-navigation ul ~ a {
+  font-weight: 300;
+}
+
+.menu-item-has-children {
+
+  &:hover {
+    background-color: #F2F2F2;
+  }
+}
+
+.menu .current-menu-item {
+  text-decoration: underline;
+}
+
+.main-navigation .toggled {
+  transition: all 2s;
+}
+
+button.menu-toggle {
+  position: relative;
+  background-color: #fff;
+  margin-top: 1em;
+  // border: 1px solid $copy-color;
+  // border-radius: 0;
+  border: none;
+
+  span::before {
+    // display: none;
+    // width: 20px;
+  }
+
+  // &:before {
+  //   width: 20px;
+  //   left: .5em;
+  //   margin-top: -3px;
+  // }
+
+  // &:after {
+  //   width: 20px;
+  //   left: .5em;
+  //   margin-top: 3px;
+  // }
+
+  &:hover,
+  &:focus {
+    background-color: #fff;
+    outline: none;
+  }
+}
+
+// adding home icon to handheld footer bar:
+.storefront-handheld-footer-bar ul li.home > a:before {
+	content: "\f015";
+}
+

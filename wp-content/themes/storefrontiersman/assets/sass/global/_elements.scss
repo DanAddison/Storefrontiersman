@@ -1,0 +1,29 @@
+a {
+
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+blockquote,
+.wp-block-quote.is-large,
+.wp-block-quote.is-style-large {
+	padding: 0 20px;
+	border-left: 4px solid $primary;
+  max-width: 35em;
+  
+  p {
+		font-style: normal;
+		font-size: 1.25em;
+    line-height: 1.35em;
+    margin-bottom: .75em;
+  }
+
+  cite {
+    font-size: 1em;
+  }
+}

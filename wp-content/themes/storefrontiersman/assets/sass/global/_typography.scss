@@ -1,0 +1,38 @@
+body, button, input, textarea {
+  font-family: $font__body;
+  font-weight: 300;	
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font__headings;
+  font-weight: 400;
+}
+
+h1 {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  // font-weight: 300;
+}
+
+a {
+  // color: $color__action;
+  font-weight: 300;
+
+  &:hover,
+  &:focus {
+    color: $color__action;
+  }
+}
+
+button,
+.button.alt,
+.button {
+  font-weight: 300;
+  color: white;
+  background-color: $color__button-background;
+
+  &:hover,
+  &:focus {
+    background-color: $color__action;
+  }
+}

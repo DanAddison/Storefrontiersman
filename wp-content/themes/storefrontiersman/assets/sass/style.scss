@@ -1,0 +1,67 @@
+/*
+Theme Name:     Storefrontiersman
+Theme URI:      
+Author:         Dan Addison
+Author URI:     https://danaddison.co.uk
+Template:     	storefront
+Description:  	This is a blank child theme for WooThemes StoreFront theme
+Version:      	1.0.0
+License:      	GNU General Public License v2 or later
+License URI:  	http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain:  	storefront
+Tags:         	black, white, light, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-images, full-width-template, threaded-comments, accessibility-ready
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+Storefront is based on Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+Resetting and rebuilding styles have been helped along thanks to the fine work of
+Eric Meyer http://meyerweb.com/eric/tools/css/reset/index.html
+along with Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+FontAwesome License: SIL Open Font License - http://scripts.sil.org/OFL
+Images License: GNU General Public License v2 or later
+*/
+
+/*
+ * Add your own custom css below this text.
+ */
+
+
+/*--------------------------------------------------------------
+# Utilities
+--------------------------------------------------------------*/
+@import "utils/variables";
+@import "utils/mixins";
+
+/*--------------------------------------------------------------
+# Global
+--------------------------------------------------------------*/
+@import "global/elements";
+@import "global/typography";
+@import "global/site-header";
+@import "global/site-footer";
+@import "global/menus";
+@import "global/posts-and-pages";
+
+/*--------------------------------------------------------------
+# Pages
+--------------------------------------------------------------*/
+@import "pages/splashpage";
+@import "pages/gallery";
+@import "pages/project-page";
+
+/*--------------------------------------------------------------
+# Woocommerce plugin
+--------------------------------------------------------------*/
+@import "woocommerce";
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+@import "components/hero";
+@import "components/events";
+@import "components/widgets";
+@import "components/contact";
+
+/*--------------------------------------------------------------
+# Vendors (3rd party js modules etc)
+--------------------------------------------------------------*/
+@import "vendors/jquery.fancybox.scss";

@@ -1,0 +1,200 @@
+.storefront-breadcrumb {
+  margin-bottom: 0;
+
+  @media screen and (min-width: $bp-m) {
+    margin-bottom: 2em;
+  }
+}
+
+.woocommerce-products-header {
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 2em !important;
+
+  .page-title {
+    font-size: 1.75em;
+
+    @media screen and (min-width: $bp-m) {
+      font-size: 2.6em;
+    }
+  }
+
+  .term-description p {
+    text-transform: none;
+    margin: 0;
+  }
+}
+
+ul.products li.product {
+
+  img {
+    margin-bottom: 0;
+  }
+}
+
+// show product name and price only in overlay on hover
+li.product a {
+  position: relative;
+  
+  img {
+    transition: all .4s ease;
+  }
+
+  .woocommerce-loop-product__title {
+    padding: 1em 1.5em 0;
+  }
+  
+  @media (min-width: 1000px) {
+    background-color: $color__canvas-medium;
+    
+    .woocommerce-loop-product__title {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: 0;
+      transition: all .5s ease;
+      color: white;
+      // padding: 1em 1.5em;
+    }
+    
+    .price {
+      position: absolute;
+      top: 75%;
+      transform: translateY(-75%);
+      width: 100%;
+      opacity: 0;
+      transition: all .5s ease;
+      color: white;
+      
+      .woocommerce-Price-amount,
+      .woocommerce-Price-currencySymbol {
+        color: white;
+      }
+    }
+    
+    .onsale {
+      position: absolute;
+      top: 80%;
+      transform: translateY(-80%);
+      left: 50%;
+      transform: translateX(-50%);
+      opacity: 0;
+      color: white;
+    }
+    
+    &:hover,
+    &:focus {
+      
+      img {
+        opacity: .1;
+      }
+      
+      .woocommerce-loop-product__title,
+      .price, .onsale {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.product_title {
+  font-size: 1.75em;
+}
+
+.storefront-sorting .woocommerce-ordering select {
+  font-family: $color__body;
+}
+
+.storefront-product-section .section-title {
+  font-weight: 300;
+}
+
+// restrict maximum width of archive products at mobile screen:
+ul.products li.product {
+  max-width: 324px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2em;
+
+  @media (min-width: 768px) {
+    margin-bottom: 3em;
+  }
+}
+
+
+// go to two columns before jumping up to the desktop 3 or 4 across
+@media (min-width: 500px) {
+
+  .site-main ul.products li.product {
+    width: 46.411765%;
+    float: left;
+    margin-right: 5.8823529412%;
+  }
+
+  .site-main ul.products li.product:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 768px) {
+	.site-main ul.products li.product:nth-of-type(2n) {
+		margin-right: 5.8823529412%;
+	}
+}
+
+
+// product categories list:
+.menu--categories {
+  text-align: center;
+  margin-bottom: 1em;
+
+  p {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  ul {
+    // position: relative;
+    display: inline-block;
+    list-style: none;
+    margin-left: 0;
+
+    li {
+      display: inline-block;
+
+      &:after {
+        content: "/";
+        color: rgb(158, 157, 157);
+        display: inline-block;
+        // position: absolute;
+        // top: 1px;
+        // right: -9px;
+      }
+    
+      &:last-child:after {
+        content: "";
+      }
+      
+      &:last-child {
+        padding-right: 0;
+      }
+
+      ul {
+        display: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .current-cat a {
+      text-decoration: underline;
+    }
+  }
+}
+
+// layout of image thumbnails on a single product page
+.single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-4 .flex-control-thumbs li {
+  margin-right: 0;
+}

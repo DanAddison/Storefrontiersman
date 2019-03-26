@@ -1,0 +1,86 @@
+// overall layout etc, specific styling for the menu component sections are found in menus.scss
+.site-footer {
+  color: $color__body;
+  background-color: $color__canvas-medium;
+  padding-bottom: 3em;
+  padding-top: 3em;
+
+  a {
+    transition: 0.3s ease;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  @media screen and (min-width: $bp-menu) {
+    padding-bottom: 1em;
+    padding-top: 0;
+  }
+}
+
+.footer-widgets {
+  border-bottom: 1px solid $color__body;
+}
+
+.sub-footer {
+  // padding on bottom is to clear handheld footer bar (and also store notice, in case it is enabled)
+  padding-bottom: 40px;
+  text-align: center;
+
+  .site-legal {
+    color: $color__body;
+    margin-top: 1.5em;
+  }
+  
+  .social-navigation {
+    text-align: center;
+    
+    ul {
+      list-style: none;
+      margin: 0;
+    }
+    
+    li {
+      display: inline-block;
+    }
+    
+    a {
+      padding: .5em;
+
+      &:hover,
+      &:focus {
+        color: white;
+      }
+    }
+    
+    .fab {
+      font-size: 1.25em;
+    }
+  }
+
+  .site-credit {
+    margin-top: 1em;
+  }
+
+  .credit a {
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
+
+  @media screen and (min-width: $bp-menu) {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 0 40px;
+
+    .site-legal,
+    .site-credit {
+      margin-top: 0;
+    }
+  }
+}

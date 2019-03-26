@@ -1,0 +1,60 @@
+/*------------------------------------*\
+    Sizes
+\*------------------------------------*/
+
+$size__site-main: 100%;
+$size__site-sidebar: 25%;
+
+$bp-s: 500px;
+$bp-m: 700px;
+$bp-l: 1000px;
+$bp-xl: 1300px;
+
+$bp-menu: 600px;
+
+$max-width: $bp-xl;
+
+// spacing
+$spacing: 2em;
+$spacing-percent: 3%;		// Used by grid system
+
+/*------------------------------------*\
+    Fonts
+\*------------------------------------*/
+
+$font__body: 'raleway', sans-serif;
+$font__headings: 'Montserrat', "Lucida Grande", sans-serif;
+$font__code: Monaco, Consolas, monospace;
+$font__pre: Courier, monospace;
+
+/*------------------------------------*\
+    Colours
+\*------------------------------------*/
+
+$white: #fff;
+$black: #222;
+$primary: #66d4b3;
+$secondary: #325f52;
+
+// Backgrounds
+$color__canvas-light: $white;
+$color__canvas-medium: #dbdbdb;
+$color__canvas-dark: $black;
+$color__header: $primary;
+$color__footer: $primary;
+
+// Text
+$color__body: $black;
+$color__body-light: #474747;
+$color__headings: $black;
+
+// Links
+$color__action: $secondary;
+
+// Buttons
+$color__button-text: $color__body;
+$color__button-background: $color__header;
+$color__button-border: $black;
+
+
+

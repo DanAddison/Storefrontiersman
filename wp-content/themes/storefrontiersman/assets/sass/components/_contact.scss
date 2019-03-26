@@ -1,0 +1,16 @@
+.wpcf7 {
+
+  label {
+    font-weight: 300;
+  }
+
+  button, input[type="submit"] {
+    background-color: $color__canvas-medium;
+    font-weight: 300;
+
+    &:hover,
+    &:focus {
+      background-color: $color__action;
+    }
+  }
+}

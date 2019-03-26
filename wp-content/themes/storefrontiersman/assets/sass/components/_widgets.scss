@@ -1,0 +1,119 @@
+// remove unecessary gaps from empty p tags in mailchimp sign up form:
+.widget p {
+  margin: 0;
+}
+
+/*********************************************************
+## Instagram widget
+*********************************************************/
+.instagram-widget {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: $color__canvas-medium;
+  max-width: 66.5em; // global max-width
+  
+  // .widgettitle
+  .clear {
+    position: absolute;
+    top: -2em;
+    left: .5em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 200;
+    color: $color__action;
+  }
+
+  .instagram-pics {
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+      
+    @media screen and (max-width: $bp-menu) {
+      li:nth-child(n+7) {  
+        display: none
+      }
+    }
+  }
+}
+
+/*********************************************************
+## Footer Menu widget
+*********************************************************/
+#menu-footer-menu li::before {
+  opacity: 1;
+}
+
+// my account icon:
+.widget_nav_menu ul .menu-item-233::before {
+  content: "\f007";
+}
+// FAQs icon:
+.widget_nav_menu ul .menu-item-229::before {
+  content: "\f059";
+}
+
+// privacy policy icon:
+.widget_nav_menu ul .menu-item-231::before {
+  content: "\f023";
+}
+
+/*********************************************************
+## Product Categories widget
+*********************************************************/
+.widget_product_categories ul li {
+
+  &:before {
+    opacity: 1;
+  }
+}
+
+.widget.woocommerce li .count {
+    float: none;
+  }
+
+/*********************************************************
+## Product Search widget
+*********************************************************/
+.woocommerce-product-search {
+  input {
+    font-weight: 300;
+    font-size: .9em;
+    background-color: #fff;
+  }
+}
+
+.widget_product_search form::before {
+  top: .9em;
+  left: .9em;
+}
+
+/*********************************************************
+## MailChimp signup widget
+*********************************************************/
+.mc_embed_signup {
+
+  p {
+    margin: 0;
+  }
+}
+
+input#mce-EMAIL {
+  width: 100%;
+  font-weight: 300;
+  font-size: .9em;
+  background-color: #fff;
+}
+input#mc-embedded-subscribe {
+  margin-top: 1em;
+  width: 100%;
+  font-weight: 300;
+  font-size: .9em;
+  color: #fff;
+  background-color: $color__action;
+}
+
+

@@ -1,0 +1,53 @@
+// overrides for the Events Calendar plugin
+
+#tribe-events {
+
+  #tribe-events-content {
+    margin: 4em 0;
+  }
+
+// style all links
+  a {
+    color: $color__body;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      color: $color__action;
+    }
+  }
+
+  // style Google Map link differently
+  .tribe-events-gmap {
+    color: $color__action;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
+  // hide the search/filter bar since there will be so few events listed:
+  #tribe-events-bar {
+    display: none;
+  }
+
+  .tribe-events-page-title {
+
+    @media screen and (min-width: $bp-m) {
+    
+      font-size: 2.6em;
+    }
+  }
+  
+  .tribe-events-event-image img {
+    margin-bottom: 1em;
+    max-height: 500px;
+    width: auto;
+  }
+  
+  .tribe-event-url {
+    font-weight: 400;
+  }
+}

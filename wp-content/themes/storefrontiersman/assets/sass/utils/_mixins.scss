@@ -1,0 +1,10 @@
+// placeholders ( @extend )
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// mixins ( @include )

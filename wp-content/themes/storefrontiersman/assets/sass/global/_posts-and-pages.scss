@@ -1,0 +1,118 @@
+// increase overall width:
+// .col-full {
+//   max-width: 1200px;
+// }
+
+body {
+  background-color: $color__canvas-light;
+}
+
+img {
+  border-radius: 0;
+}
+
+// avoid floated images with content flowing around them from squishing down silly small on mobile screen:
+.alignleft,
+.alignright {
+  margin-bottom: 1em;
+
+  @media screen and (max-width: $bp-m) {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+// give floated images a little more breathing room:
+@media screen and (min-width: $bp-m) {
+
+  .alignleft {
+    margin-right: 2em;
+  }
+  
+  .alignright {
+    margin-left: 2em;
+  }
+}
+
+.site-content {
+  margin-top: 2em;
+
+  @media screen and (min-width: $bp_menu) {
+    margin-top: 0;
+  }
+}
+
+// center align page title if there is no sidebar (fullwidth template chosen):
+.page-template-template-fullwidth-php .entry-header,
+.page-template-template-fullwidth .entry-header {
+  text-align: center;
+  font-size: .6em;  
+
+  @media screen and (min-width: $bp-m) {
+    font-size: 1em;
+  }
+}
+
+.post.type-post{
+
+  .entry-title {
+    font-size: 1.75em;
+  }
+
+  .entry-content {
+    width: 100%;
+  }
+
+  .wp-post-image {
+    float: left;
+    margin-left: 0;
+    margin-right: 2em;
+    width: auto;
+    max-height: 200px;
+    
+    @media screen and (max-width: $bp-m) {
+      float: none;
+      // width: 100%;
+    }
+  }
+}
+
+#secondary.widget-area {
+  display: none;
+
+  @media screen and (min-width: $bp_menu) {
+    display: block;
+    margin-top: 5em;
+  }
+}
+
+.comments-area {
+  background-color: $color__canvas-medium;
+  color: $color__body;
+}
+
+.comment-form {
+
+  label {
+    font-weight: 300;
+  }
+
+  .submit{
+    font-weight: 300;
+    background-color: $color__action;
+  }
+}
+
+// width of content on pages that include sidebar widget
+// bio + contact
+.post-64,
+.post-65 {
+
+  @media (min-width: 1000px) {
+
+    .entry-content {
+      padding-right: 4em;
+    }
+  }
+}
