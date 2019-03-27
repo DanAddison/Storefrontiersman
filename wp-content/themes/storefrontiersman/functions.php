@@ -293,9 +293,7 @@ function wheelbarrow_allowed_block_types() {
 		'core/heading',
 		'core/paragraph',
 		'core/list',
-		'core/table',
 		'core/file',
-		'core/verse',
 		'core/quote',
 		'core/image',
 		'core/cover',
@@ -316,3 +314,10 @@ function wheelbarrow_allowed_block_types() {
 }
 
 add_filter( 'allowed_block_types', 'wheelbarrow_allowed_block_types', 10, 2 );
+
+// disable all custom colours in the editor
+function nebuloshift_gutenberg_disable_custom_colors() {
+	add_theme_support( 'editor-color-palette' );
+	add_theme_support( 'disable-custom-colors' );
+}
+add_action( 'after_setup_theme', 'nebuloshift_gutenberg_disable_custom_colors' );

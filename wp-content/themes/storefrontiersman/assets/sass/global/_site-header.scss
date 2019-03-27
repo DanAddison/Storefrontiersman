@@ -29,12 +29,27 @@
 }
 
 .site-branding {
+  font-size: 1em;
+  margin: 0 0 .25em;
+
+  @media screen and (min-width: $bp-m) {
+    font-size: 2em;
+
+    .site-title {
+      line-height: 1;
+    }
+  }
 
   .site-title a,
   .site-description {
-
     color: white;
   }
+}
+
+.woocommerce-active .site-header .site-branding {
+  float: none;
+  width: 100%;
+
 }
 
 // restrict width of header cart below 1000px so that nav items still work:
