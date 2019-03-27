@@ -1,3 +1,7 @@
+.home .site-header {
+  display: none;
+}
+
 .splash {
   position: absolute;
   width: 100vw;
@@ -13,7 +17,7 @@
 	background-size: cover;
 	background-position: center center;
   display: block;
-  background-image: url('assets/images/tat1.jpg');
+  background-image: url('assets/images/header/tat1-1000.jpg');
   width: 100%;
   top: 0;
   right: 0;
@@ -22,6 +26,10 @@
   position: relative;
   z-index: 10;
   height: 100vh;
+
+  @media screen and (min-width: 1000px) {
+    background-image: url('assets/images/header/tat1-full.jpg');
+  }
 }
 
 .splash__content {
